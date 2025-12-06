@@ -1,0 +1,41 @@
+{
+  "name": "DevContainer",
+  "image": "rust",
+  "remoteUser": "root",
+  "runArgs": ["--userns="],
+  // "build":{
+  //   "dockerfile": "./Dockerfile",
+  // },
+  "customizations": {
+    "vscodium": {
+      // Settings are not yet supported
+      //
+      // "settings": {
+      //    "go.useLanguageServer": true,
+      //    "go.gopath": "/go"
+      // },
+
+      // Extensions configuration
+      "extensions": {
+        "rust-lang.rust-analyzer": {},
+        "vadimcn.vscode-lldb": {},
+        "mhutchie.git-graph": {},
+        "barbosshack.crates-io": {},
+        "tamasfe.even-better-toml": {},
+
+
+        // // This extension will be downloaded from your editor's
+        // // default registry, which is OpenVSX for VS Codium and
+        // // Visual Studio Marketplace for VS Code.
+        // "golang.Go": {},
+
+        // // If you wish, you can specify the desired registry and
+        // // version for the extension.
+        // "webben.browserslist": {
+        //   "registry": "openvsx",
+        //   "version": "11.0.0",
+        // },
+      }
+    }
+  }
+}
