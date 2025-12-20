@@ -154,3 +154,10 @@ version = "0.1.0"
 dependencies = [
  "aoclib",
 ]
+
+[[package]]
+name = "y2025d02"
+version = "0.1.0"
+dependencies = [
+ "aoclib",
+]
